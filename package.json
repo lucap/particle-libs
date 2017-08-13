@@ -1,0 +1,19 @@
+{
+  "name": "particle-libs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lucap/particle-libs.git"
+  },
+  "author": "Luca Pellicoro",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lucap/particle-libs/issues"
+  },
+  "homepage": "https://github.com/lucap/particle-libs#readme"
+}
