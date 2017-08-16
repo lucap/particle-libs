@@ -50,7 +50,7 @@ export default class App extends Component {
 
         return (
             <div className={'main-container'}>
-                <div className={'list-container'}>
+                <div>
                     {
                         currentPageData.map((library) => {
                             return (
@@ -67,9 +67,19 @@ export default class App extends Component {
                 <div className={'pagination-container'}>
                     <span>Page: {currentPageIndex}</span>
                     <span> | </span>
-                    <span onClick={this.onPreviousPage}>Previous</span>
+                    <span
+                        onClick={this.onPreviousPage}
+                        className={'pagination-controller'}
+                    >
+                        Previous
+                    </span>
                     <span> | </span>
-                    <span onClick={this.onNextPage}>Next</span>
+                    <span
+                        onClick={this.onNextPage}
+                        className={'pagination-controller'}
+                    >
+                        Next
+                    </span>
                 </div>
             </div>
         );
