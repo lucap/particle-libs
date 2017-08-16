@@ -3,11 +3,13 @@ html, body {
     margin: 0;
     font-family: Helvetica;
     font-size: 16px;
+    background-color: #F7F7F7;
+    color: #333333;
 }
 
 .main-container {
     position: relative;
-    border: 1px solid black;
+    border: 1px solid #333333;
     height: 450px;
     max-width: 400px;
     border-radius: 3px;
@@ -17,13 +19,13 @@ html, body {
 .list-item {
     padding: 10px;
     margin: 1px 0;
-    background-color: lightgray;
+    background-color: #C7C7C7;
     cursor: pointer;
 }
 
 .pagination-container {
     position: absolute;
-    bottom: 0;
+    bottom: 5px;
     left: 28%;
 }
 
