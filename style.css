@@ -13,7 +13,7 @@ html, body {
     height: 450px;
     max-width: 400px;
     border-radius: 3px;
-    margin: auto;
+    margin: 20px auto;
 }
 
 .list-item {
