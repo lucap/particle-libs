@@ -49,19 +49,22 @@ export default class App extends Component {
         const {currentPageData} = this.state;
 
         return (
-            <div>
-                {
-                    currentPageData.map((library) => {
-                        return (
-                            <div
-                                key={library.id}
-                            >
-                                {library.attributes.name}
-                            </div>
-                        )
-                    })
-                }
-                <div>
+            <div className={'main-container'}>
+                <div className={'list-container'}>
+                    {
+                        currentPageData.map((library) => {
+                            return (
+                                <div
+                                    key={library.id}
+                                    className={'list-item'}
+                                >
+                                    {library.attributes.name}
+                                </div>
+                            )
+                        })
+                    }
+                </div>
+                <div className={'pagination-container'}>
                     <span onClick={this.onPreviousPage}>Previous</span>
                     <span> | </span>
                     <span onClick={this.onNextPage}>Next</span>
