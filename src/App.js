@@ -46,7 +46,7 @@ export default class App extends Component {
     }
 
     render() {
-        const {currentPageData} = this.state;
+        const {currentPageData, currentPageIndex} = this.state;
 
         return (
             <div className={'main-container'}>
@@ -65,6 +65,8 @@ export default class App extends Component {
                     }
                 </div>
                 <div className={'pagination-container'}>
+                    <span>Page: {currentPageIndex}</span>
+                    <span> | </span>
                     <span onClick={this.onPreviousPage}>Previous</span>
                     <span> | </span>
                     <span onClick={this.onNextPage}>Next</span>

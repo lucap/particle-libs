@@ -10,6 +10,7 @@ html, body {
     border: 1px solid black;
     height: 450px;
     max-width: 400px;
+    border-radius: 3px;
 }
 
 .list-container {
@@ -25,4 +26,5 @@ html, body {
 .pagination-container {
     position: absolute;
     bottom: 0;
+    left: 10px;
 }
